@@ -1,6 +1,6 @@
 package com.back.boundedContext.shared.post.event;
 
-import com.back.boundedContext.shared.post.dto.PostCommentDto;
+import com.back.shared.post.dto.PostCommentDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
