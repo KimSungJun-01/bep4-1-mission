@@ -1,6 +1,0 @@
-2026-09-17 12:30:45.729218+09:00 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "POSTCOMMENT" not found; SQL statement:
-select * from `postcomment` [42102-240]
-2026-09-17 12:30:53.094636+09:00 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "POSTCOMMENT" not found; SQL statement:
-select * from `postComment` [42102-240]
