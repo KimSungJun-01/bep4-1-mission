@@ -8,7 +8,6 @@ import com.back.boundedContext.post.out.PostRepository;
 import com.back.global.rsData.RsData;
 import com.back.shared.member.dto.MemberDto;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.annotation.CreatedDate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -39,14 +38,13 @@ public class PostFacade {
     @Transactional
     public PostMember syncMember(MemberDto member) {
         PostMember _member = new PostMember(
+                member.getId(),
+                member.getCreateDate(),
+                member.getModifyDate(),
                 member.getUsername(),
                 "",
                 member.getNickname()
         );
-
-        _member.setId(member.getId());
-        _member.setCreateDate(member.getCreateDate());
-        _member.setModifyDate(member.getModifyDate());
 
         return postMemberRepository.save(_member);
     }
