@@ -3,7 +3,7 @@ package com.back.boundedContext.post.domain;
 
 import com.back.boundedContext.member.domain.Member;
 import com.back.shared.post.dto.PostCommentDto;
-import com.back.boundedContext.shared.post.event.PostCommentCreatedEvent;
+import com.back.shared.post.event.PostCommentCreatedEvent;
 import com.back.global.jpa.entity.BaseIdAndTime;
 import jakarta.persistence.*;
 import lombok.Getter;
