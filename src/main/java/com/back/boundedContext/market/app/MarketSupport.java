@@ -40,4 +40,8 @@ public class MarketSupport {
     public long countOrders() {
         return orderRepository.count();
     }
+
+    public Optional<Order> findOrderById(int id) {
+        return orderRepository.findById(id);
+    }
 }
